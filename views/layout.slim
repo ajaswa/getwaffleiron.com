@@ -1,0 +1,18 @@
+doctype html
+html
+  head
+    title Get WaffleIron
+    meta charset="utf-8"
+    link rel='stylesheet' href='/style.css'
+  body
+    header
+      nav
+        a href='/get' Get
+        a href='http://github.com/ajaswa/waffleiron' GitHub
+        
+    == yield
+    footer
+      / small
+        | Copyright &copy; #{Time.now.year} 
+        a href="http://andrewjaswa.com" Andrew Jaswa
+
