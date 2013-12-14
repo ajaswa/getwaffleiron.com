@@ -1,12 +1,12 @@
 require 'sinatra'
 require 'slim'
 require 'sass'
+require 'waffleiron'
 
 Sass::Plugin.options[:style] = :compressed
 Sass::Plugin.options[:cache] = false
 use Sass::Plugin::Rack
 SASS_DIR = File.expand_path("../app/assets/stylesheets", __FILE__)
-# Sass.load_path = File.expand_path("../app/assets/stylesheets", __FILE__)
 
 get '/' do
   slim :index
